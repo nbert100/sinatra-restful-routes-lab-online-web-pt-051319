@@ -4,7 +4,11 @@ Recipe: <%= @recipe.name %><br>
 Ingredients: <%= @recipe.ingredients %><br>
 Cook Time: <%= @recipe.cook_time %><br>
 
+<<<<<<< HEAD
 <form action="/recipes/<%= @recipe.id %>" method="post">
+=======
+<form method="POST" action="/recipes/<%= @recipe.id %>/delete">
+>>>>>>> 5af53fa5162cb07e1d5c55757da44c49c2cc37c4
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
 </form>
